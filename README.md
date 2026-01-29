@@ -1,2 +1,2 @@
 # financereports
-Automated reports sending Excel files to the applicatio
+Automated reports sending Excel files to the application
