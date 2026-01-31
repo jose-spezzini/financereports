@@ -28,3 +28,7 @@ graph TD
 **Business Value**
 Reduced reporting time by 80%
 Automated financial KPIs
+
+
+<img width="561" height="801" alt="imagenreports" src="https://github.com/user-attachments/assets/343eb865-59a4-4b18-a67b-4e03bdcf6bd0" />
+
