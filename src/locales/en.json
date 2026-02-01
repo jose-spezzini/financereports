@@ -1,0 +1,133 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "required": "Required",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "uploadAnother": "Upload another",
+        "downloadPDF": "Download PDF Report",
+        "important": "Important",
+        "analyze": "Analyze Data",
+        "tryAnother": "Try with another file",
+        "fileValid": "Valid file. {{count}} transactions found.",
+        "processing": "Processing..."
+    },
+    "landing": {
+        "title": "FinanceReports",
+        "subtitle": "Smart financial analysis for your Excel files",
+        "getStarted": "Get Started Free",
+        "subscribe": "Subscribe",
+        "contact": "Contact Sales",
+        "comingSoon": "Coming Soon",
+        "period": {
+            "monthly": "/mo"
+        },
+        "features": {
+            "basic": "Basic analysis",
+            "download": "Template download",
+            "pdf": "PDF reports",
+            "noStorage": "No storage",
+            "allFree": "All in Free",
+            "cloud": "Cloud storage",
+            "history": "Report history",
+            "priority": "Priority support",
+            "custom": "Custom solution",
+            "api": "API Access",
+            "dedicated": "Dedicated SLA"
+        },
+        "plans": {
+            "free": "Free",
+            "plus": "Plus",
+            "enterprise": "Enterprise"
+        },
+        "steps": {
+            "title": "Start your financial analysis",
+            "subtitle": "Follow these simple steps to generate your reports",
+            "download": {
+                "title": "1. Download Template",
+                "desc": "Get our pre-formatted Excel file. Includes examples and required columns.",
+                "button": "Download Excel Template"
+            },
+            "upload": {
+                "title": "2. Upload Information",
+                "desc": "Once you've filled the template, upload it to generate the dashboard.",
+                "button": "I have my file, upload",
+                "buttonReady": "Already have a file? Upload"
+            },
+            "important": {
+                "rule1": "Do not modify column names in the first row.",
+                "rule2": "Ensure dates are in DD/MM/YYYY format.",
+                "rule3": "Fields with red borders in the template are mandatory."
+            }
+        }
+    },
+    "dashboard": {
+        "title": "Financial Dashboard",
+        "metrics": {
+            "totalIncome": "Total Income",
+            "totalExpenses": "Total Expenses",
+            "netBalance": "Net Balance",
+            "transactions": "Transactions"
+        },
+        "charts": {
+            "cashFlow": "Cash Flow",
+            "expensesByCategory": "Expenses by Category",
+            "paymentMethods": "Payment Methods",
+            "topEntities": "Top Entities",
+            "income": "Income",
+            "expense": "Expense"
+        },
+        "filters": {
+            "year": "Year",
+            "month": "Month",
+            "category": "Category",
+            "type": "Type",
+            "all": "All",
+            "vendor": "Vendor",
+            "customer": "Customer"
+        },
+        "months": {
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
+            "june": "June",
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December"
+        },
+        "table": {
+            "title": "Transactions of the current month",
+            "date": "Date",
+            "type": "Type",
+            "category": "Category",
+            "entity": "Entity",
+            "amount": "Amount"
+        },
+        "summary": {
+            "title": "Cash Flow Summary",
+            "increase": "There is an increase in expenses in the months of {{months}} and an increase in income in {{incomeMonths}}."
+        },
+        "logo": {
+            "upload": "Upload Company Logo",
+            "change": "Change Logo"
+        }
+    },
+    "upload": {
+        "title": "Upload your Excel file",
+        "subtitle": "Drag your file here or select one from your computer",
+        "dragDrop": "Drag and drop your file here",
+        "clickToBrowse": "or click to browse",
+        "support": "Supports .xlsx, .xls",
+        "errorsFound": "Errors found ({{count}})",
+        "row": "Row",
+        "column": "In",
+        "invalidExtension": "Only Excel files (.xlsx, .xls) are allowed",
+        "unknownError": "Unexplainable error processing the file"
+    }
+}

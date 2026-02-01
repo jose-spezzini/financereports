@@ -1,0 +1,133 @@
+{
+    "common": {
+        "loading": "Carregando...",
+        "error": "Erro",
+        "required": "Obrigatório",
+        "submit": "Enviar",
+        "cancel": "Cancelar",
+        "uploadAnother": "Carregue outro",
+        "downloadPDF": "Baixar Relatório PDF",
+        "important": "Importante",
+        "analyze": "Analisar Dados",
+        "tryAnother": "Tentar com outro arquivo",
+        "fileValid": "Arquivo válido. {{count}} transações encontradas.",
+        "processing": "Processando..."
+    },
+    "landing": {
+        "title": "FinanceReports",
+        "subtitle": "Análise financeira inteligente para seus arquivos Excel",
+        "getStarted": "Começar Grátis",
+        "subscribe": "Assinar",
+        "contact": "Contatar",
+        "comingSoon": "Brevemente",
+        "period": {
+            "monthly": "/mês"
+        },
+        "features": {
+            "basic": "Análise básica",
+            "download": "Download do template",
+            "pdf": "Relatórios em PDF",
+            "noStorage": "Sem armazenamento",
+            "allFree": "Tudo do Free",
+            "cloud": "Armazenamento em nuvem",
+            "history": "Histórico de relatórios",
+            "priority": "Suporte prioritário",
+            "custom": "Solução personalizada",
+            "api": "Acesso via API",
+            "dedicated": "SLA dedicado"
+        },
+        "plans": {
+            "free": "Grátis",
+            "plus": "Plus",
+            "enterprise": "Empresarial"
+        },
+        "steps": {
+            "title": "Comece sua análise financeira",
+            "subtitle": "Siga estes passos simples para gerar seus relatórios",
+            "download": {
+                "title": "1. Baixar Template",
+                "desc": "Obtenha nosso arquivo Excel pré-formatado. Inclui exemplos e colunas necessárias.",
+                "button": "Baixar Template Excel"
+            },
+            "upload": {
+                "title": "2. Carregar Informações",
+                "desc": "Depois de preencher o template, carregue-o para gerar o dashboard.",
+                "button": "Já tenho meu arquivo, carregar",
+                "buttonReady": "Já tem um arquivo? Carregar"
+            },
+            "important": {
+                "rule1": "Não modifique os nomes das colunas na primeira linha.",
+                "rule2": "Certifique-se de que a data esteja no formato DD/MM/YYYY.",
+                "rule3": "Campos com bordas vermelhas no template são obrigatórios."
+            }
+        }
+    },
+    "dashboard": {
+        "title": "Financial Dashboard",
+        "metrics": {
+            "totalIncome": "Total de Receitas",
+            "totalExpenses": "Total de Despesas",
+            "netBalance": "Saldo Líquido",
+            "transactions": "Transações"
+        },
+        "charts": {
+            "cashFlow": "Fluxo de caixa",
+            "expensesByCategory": "Despesas por Categoria",
+            "paymentMethods": "Métodos de Pagamento",
+            "topEntities": "Principais Clientes/Fornecedores",
+            "income": "Receitas",
+            "expense": "Despesas"
+        },
+        "filters": {
+            "year": "Ano",
+            "month": "Mês",
+            "category": "Categoria",
+            "type": "Tipo",
+            "all": "Todos",
+            "vendor": "Fornecedor",
+            "customer": "Cliente"
+        },
+        "months": {
+            "january": "Janeiro",
+            "february": "Fevereiro",
+            "march": "Março",
+            "april": "Abril",
+            "may": "Maio",
+            "june": "Junho",
+            "july": "Julho",
+            "august": "Agosto",
+            "september": "Setembro",
+            "october": "Outubro",
+            "november": "Novembro",
+            "december": "Dezembro"
+        },
+        "table": {
+            "title": "Transações do mês atual",
+            "date": "Data",
+            "type": "Tipo",
+            "category": "Categoria",
+            "entity": "Entidade",
+            "amount": "Valor"
+        },
+        "summary": {
+            "title": "Resumo do Fluxo de Caixa",
+            "increase": "Há um aumento nas despesas nos meses de {{months}} e um aumento nas receitas em {{incomeMonths}}."
+        },
+        "logo": {
+            "upload": "Carregar Logotipo da Empresa",
+            "change": "Alterar Logotipo"
+        }
+    },
+    "upload": {
+        "title": "Carregue seu arquivo Excel",
+        "subtitle": "Arraste seu arquivo aqui ou selecione um do seu computador",
+        "dragDrop": "Arraste e solte seu arquivo aqui",
+        "clickToBrowse": "ou clique para navegar",
+        "support": "Suporta .xlsx, .xls",
+        "errorsFound": "Erros encontrados ({{count}})",
+        "row": "Linha",
+        "column": "Em",
+        "invalidExtension": "Apenas arquivos Excel (.xlsx, .xls) são permitidos",
+        "unknownError": "Erro inexplicável ao processar o arquivo"
+    }
+}
