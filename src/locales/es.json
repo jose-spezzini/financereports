@@ -79,7 +79,7 @@
             "expense": "Gastos"
         },
         "filters": {
-            "year": "Anho",
+            "year": "Año",
             "month": "Mes",
             "category": "Categoría",
             "type": "Type",

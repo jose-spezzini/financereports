@@ -130,7 +130,12 @@ const Dashboard: React.FC = () => {
 
     const exportPDF = () => {
         const input = document.getElementById('dashboard-content');
+        const filters = document.getElementById('dashboard-filters');
+
         if (input) {
+            // Hide filters before capture
+            if (filters) filters.style.display = 'none';
+
             // Create a temporary summary element to include in the capture
             const summaryEl = document.createElement('div');
             summaryEl.style.padding = '20px';
@@ -158,8 +163,9 @@ const Dashboard: React.FC = () => {
                 pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, pdfHeight);
                 pdf.save(`FinanceReport_${selectedYear}_${selectedMonth}.pdf`);
 
-                // Remove temporary summary
+                // Remove temporary summary and restore filters
                 input.removeChild(summaryEl);
+                if (filters) filters.style.display = 'block';
             });
         }
     };
@@ -218,7 +224,7 @@ const Dashboard: React.FC = () => {
                 </div>
 
                 {/* Filters */}
-                <Card className="p-4 bg-white border-none shadow-sm">
+                <Card id="dashboard-filters" className="p-4 bg-white border-none shadow-sm">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div>
                             <label className="block text-xs font-medium text-gray-500 mb-1 uppercase tracking-wider">{t('dashboard.filters.year')}</label>

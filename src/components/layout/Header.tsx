@@ -11,10 +11,10 @@ const Header: React.FC = () => {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex items-center">
                         <Link to="/" className="flex items-center gap-2 group">
-                            <div className="bg-blue-600 p-1.5 rounded-lg group-hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
-                                <BarChart3 className="w-6 h-6 text-white" />
+                            <div className="bg-blue-600 p-2 rounded-lg group-hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
+                                <BarChart3 className="w-8 h-8 text-white" />
                             </div>
-                            <span className="text-xl font-bold text-gray-900 tracking-tight">FinanceReports</span>
+                            <span className="text-2xl font-bold text-gray-900 tracking-tight">FinanceReports</span>
                         </Link>
                     </div>
 

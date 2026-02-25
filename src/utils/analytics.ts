@@ -90,6 +90,5 @@ export const getTopVendors = (data: Transaction[]) => {
 
 export const getRecentTransactions = (data: Transaction[]) => {
     return [...data]
-        .sort((a, b) => getSortableDate(b.transaction_date) - getSortableDate(a.transaction_date))
-        .slice(0, 20);
+        .sort((a, b) => getSortableDate(b.transaction_date) - getSortableDate(a.transaction_date));
 };
