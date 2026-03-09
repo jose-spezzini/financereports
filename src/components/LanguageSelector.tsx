@@ -9,6 +9,7 @@ const LanguageSelector: React.FC = () => {
 
     const changeLanguage = (lng: string) => {
         i18n.changeLanguage(lng);
+        localStorage.setItem('spezzini_lang', lng);
     };
 
     return (

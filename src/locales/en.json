@@ -20,6 +20,7 @@
         "subscribe": "Subscribe",
         "contact": "Contact Sales",
         "comingSoon": "Coming Soon",
+        "dashboard": "Go to Dashboard",
         "period": {
             "monthly": "/mo"
         },

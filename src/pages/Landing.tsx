@@ -1,12 +1,17 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Check, ArrowRight } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 
-const Landing: React.FC = () => {
+interface LandingProps {
+    session?: any;
+}
+
+const Landing: React.FC<LandingProps> = ({ session }) => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     const plans = [
         {
@@ -24,7 +29,7 @@ const Landing: React.FC = () => {
         },
         {
             name: t('landing.plans.plus'),
-            price: '$7',
+            price: '$8.99',
             period: t('landing.period.monthly'),
             features: [
                 t('landing.features.allFree'),
@@ -32,8 +37,8 @@ const Landing: React.FC = () => {
                 t('landing.features.history'),
                 t('landing.features.priority')
             ],
-            buttonText: t('landing.subscribe'),
-            link: '/register',
+            buttonText: session ? t('landing.dashboard') : t('landing.subscribe'),
+            link: session ? '/waitlist' : '/register',
             variant: 'primary' as const,
             popular: true
         },
@@ -54,9 +59,13 @@ const Landing: React.FC = () => {
 
     return (
         <div className="bg-white">
-            {/* Hero Section */}
             <section className="relative px-6 py-20 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-50 min-h-[600px] flex items-center">
                 <div className="mx-auto max-w-2xl text-center">
+                    {session && (
+                        <p className="text-blue-600 font-semibold mb-4">
+                            Bienvenido, {session.user?.user_metadata?.full_name || session.user?.email}
+                        </p>
+                    )}
                     <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mb-6">
                         {t('landing.title')}
                     </h1>
@@ -73,7 +82,6 @@ const Landing: React.FC = () => {
                 </div>
             </section>
 
-            {/* Pricing Section */}
             <section className="py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-4xl text-center">
