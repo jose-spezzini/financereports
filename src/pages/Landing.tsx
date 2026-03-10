@@ -37,7 +37,7 @@ const Landing: React.FC<LandingProps> = ({ session }) => {
                 t('landing.features.priority')
             ],
             buttonText: session ? t('landing.dashboard') : t('landing.subscribe'),
-            link: session ? '/waitlist' : 'https://spezzinisolutions.com',
+            link: session ? '/waitlist' : 'https://spezzinisolutions.com/register',
             variant: 'primary' as const,
             popular: true
         },
