@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Check, ArrowRight } from 'lucide-react';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
@@ -11,7 +11,6 @@ interface LandingProps {
 
 const Landing: React.FC<LandingProps> = ({ session }) => {
     const { t } = useTranslation();
-    const navigate = useNavigate();
 
     const plans = [
         {
