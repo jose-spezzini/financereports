@@ -62,10 +62,10 @@ function App() {
             <Route index element={<Landing session={session} />} />
             <Route path="download-template" element={<DownloadTemplate />} />
             <Route path="upload" element={<UploadFile />} />
-            <Route path="dashboard" element={session ? <Dashboard /> : <Navigate to="/register" />} />
+            <Route path="dashboard" element={<Dashboard />} />
             <Route path="register" element={<Register />} />
             <Route path="login" element={<Register />} />
-            <Route path="payment" element={session ? <Payment /> : <Navigate to="/register" />} />
+            <Route path="payment" element={session ? <Payment /> : <Navigate to="https://spezzinisolutions.com" />} />
             <Route path="waitlist" element={<Waitlist session={session} />} />
           </Route>
         </Routes>
