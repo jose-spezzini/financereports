@@ -6,6 +6,7 @@ import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import { parseAndValidateExcel } from '../utils/excelParser';
 import type { ValidationError, Transaction } from '../utils/excelParser';
+import { supabase } from '../supabaseClient';
 
 const UploadFile: React.FC = () => {
     const { t } = useTranslation();
@@ -65,8 +66,19 @@ const UploadFile: React.FC = () => {
         }
     };
 
-    const handleAnalyze = () => {
+    const handleAnalyze = async () => {
         if (validData.length > 0) {
+            try {
+                const { data: { session } } = await supabase.auth.getSession();
+                await supabase.from('excel_uploads').insert({
+                    user_id: session?.user?.id || null,
+                    file_name: file?.name || 'unknown',
+                    row_count: validData.length,
+                    plan_type: 'free'
+                });
+            } catch (err) {
+                console.error('Error tracking upload:', err);
+            }
             navigate('/dashboard', { state: { data: validData } });
         }
     };
